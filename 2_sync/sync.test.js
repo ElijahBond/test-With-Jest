@@ -28,10 +28,10 @@ describe('Lodash compact', () => {
 
     test('should NOT contain falsy values', () => {
         const array = [false, 42, 0, '', true, null, 'hello']
-        expext(_.compact(array)).not.toContain(false)
-        expext(_.compact(array)).not.toContain(0)
-        expext(_.compact(array)).not.toContain('')
-        expext(_.compact(array)).not.toContain(null)
+        expect(_.compact(array)).not.toContain(false)
+        expect(_.compact(array)).not.toContain(0)
+        expect(_.compact(array)).not.toContain('')
+        expect(_.compact(array)).not.toContain(null)
     })
 })
 
